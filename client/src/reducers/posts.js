@@ -6,6 +6,5 @@ export default (posts= [],action) => {
             return [...posts, action.payload];
         default:
             return posts;
-            break;
     }
 }
