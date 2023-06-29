@@ -18,14 +18,6 @@ dotenv.config();
 const gClientId = process.env.googleClientId;
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
 
-// gapi.load("client:auth2", () => {
-//   gapi.client.init({
-//     clientId:
-//     "718490686812-ede9vpf6hgftrpk11e8khd41otpe4q4g.apps.googleusercontent.com",
-//     plugin_name: "chat",
-//   });
-// });
-
 const SignUp = () => {
   const [form, setForm] = useState(initialState);
   const [isSignup, setIsSignup] = useState(false);
@@ -52,17 +44,6 @@ const SignUp = () => {
     }
   };
 
-//   const googleSuccess = async (res) => {
-//     // console.log(res);
-//     const result = jwt_decode(res?.credential); // ?. does not throw error if obj does not exist it throws undefined
-//     console.log(result);
-
-//     try {
-//         dispatch({ type: AUTH , data: { result }});
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
 
 const googleSuccess = async (res) => {
   const result = res?.profileObj;
