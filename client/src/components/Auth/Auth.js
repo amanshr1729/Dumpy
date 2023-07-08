@@ -85,7 +85,7 @@ const googleSuccess = async (res) => {
             { isSignup ? 'Sign Up' : 'Sign In' }
           </Button>
           <GoogleLogin
-            clientId="<YOUR ID HERE>"
+            clientId="YOUR ID HERE"
             scope='email'
             render={(renderProps) => (
               <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">

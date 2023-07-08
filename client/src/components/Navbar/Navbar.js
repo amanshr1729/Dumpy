@@ -4,7 +4,8 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
-import memories from '../../Images/flashcard1.jpg';
+import flashlogo from '../../Images/akatsuki.png';
+import flashtext from '../../Images/flashtext.jpg'
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
@@ -37,10 +38,11 @@ const Navbar = () => {
 
   return (
     <AppBar className={classes.appBar} position="static" color="inherit">
-      <div className={classes.brandContainer}>
-        <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">Memories</Typography>
-        <img className={classes.image} src={memories} alt="icon" height="60" />
-      </div>
+      <Link to="/" className={classes.brandContainer}>
+        {/* <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">Memories</Typography> */}
+        <img src={flashtext} alt="icon" height="100px"/>
+        <img className={classes.image} src={flashlogo} alt="icon" height="100px" />
+      </Link>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
           <div className={classes.profile}>
