@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "proxy": "https://cheerful-snickerdoodle-624910.netlify.app/posts",
+  "proxy": "https://flashcard-backend-new.onrender.com/",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.9.1",
