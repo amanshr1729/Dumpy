@@ -40,8 +40,8 @@ const Navbar = () => {
     <AppBar className={classes.appBar} position="static" color="inherit">
       <Link to="/" className={classes.brandContainer}>
         {/* <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">Memories</Typography> */}
-        <img src={flashtext} alt="icon" height="100px"/>
         <img className={classes.image} src={flashlogo} alt="icon" height="100px" />
+        <img src={flashtext} alt="icon" height="100px"/>
       </Link>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (
