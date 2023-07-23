@@ -4,8 +4,8 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
-import flashlogo from '../../Images/akatsuki.png';
-import flashtext from '../../Images/flashtext.jpg'
+import flashlogo from '../../Images/flashlogox.jpg';
+import flashtext from '../../Images/flashtextx.jpg'
 import * as actionType from '../../constants/actionTypes';
 import useStyles from './styles';
 
